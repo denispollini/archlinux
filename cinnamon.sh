@@ -9,4 +9,4 @@ echo "######################################################"
 tput sgr0
 echo
 # Install DE Cinnamon
-sudo pacman -S cinnamon  --noconfirm --needed         
+sudo pacman -S cinnamon  --noconfirm --needed

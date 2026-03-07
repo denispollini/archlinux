@@ -234,7 +234,7 @@ tput sgr0
 echo
 # Install essential packages
 
-pacstrap -K /mnt base linux linux-firmware git vim nano 
+pacstrap -K /mnt base linux linux-firmware 
 
 echo
 tput setaf 3
