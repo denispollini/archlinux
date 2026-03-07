@@ -10,4 +10,4 @@ tput sgr0
 echo
 # Install and Change Shell to Fish
 sudo pacman -S fish --noconfirm --needed
-#chsh -s /usr/bin/fish $USER
+chsh -s /usr/bin/fish $USER
