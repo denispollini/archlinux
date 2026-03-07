@@ -4,15 +4,15 @@ set -e
 echo
 tput setaf 3
 echo "######################################################"
-echo "################### Install VirtualBOX"
+echo "################### Install LightDM"
 echo "######################################################"
 tput sgr0
 echo
-# VirtualBOX
+# Install LightDM
 
-sudo pacman -S virtualbox --noconfirm --needed
-sudo pacman -S virtualbox-host-dkms --noconfirm --needed
-sudo pacman -S virtualbox-guest-utils --noconfirm --needed
+sudo pacman -S lightdm --noconfirm --needed 
+sudo pacman -S lightdm-gtk-greeter --noconfirm --needed
+sudo pacman -S lightdm-gtk-greeter-settings --noconfirm --needed
 
 echo
 tput setaf 3
@@ -22,5 +22,4 @@ echo "######################################################"
 tput sgr0
 echo
 # Enable Services
-sudo systemctl enable vboxservice
-sudo systemctl start vboxservice
+sudo systemctl enable --now lightdm.service

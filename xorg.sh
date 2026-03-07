@@ -4,9 +4,9 @@ set -e
 echo
 tput setaf 3
 echo "######################################################"
-echo "################### Install Cinnamon"
+echo "################### Install Xorg"
 echo "######################################################"
 tput sgr0
 echo
-# Install DE Cinnamon
-sudo pacman -S cinnamon  --noconfirm --needed         
+# Install Xorg
+sudo pacman -S xorg  --noconfirm --needed
