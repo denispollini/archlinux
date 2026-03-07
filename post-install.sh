@@ -86,7 +86,7 @@ echo "################### Install Software"
 echo "######################################################"
 tput sgr0
 echo
-# Install Install Software
+# Install Software
 sudo pacman -S linux-headers --noconfirm --needed
 sudo pacman -S anydesk-bin --noconfirm --needed
 sudo pacman -S rustdesk-bin --noconfirm --needed
@@ -116,9 +116,6 @@ sudo pacman -S spotify --noconfirm --needed
 sudo pacman -S discord --noconfirm --needed
 sudo pacman -S neofetch --noconfirm --needed
 sudo pacman -S fastfetch --noconfirm --needed
-
-
-curl -f https://zed.dev/install.sh | sh
 
 echo
 tput setaf 3
