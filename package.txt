@@ -1,7 +1,8 @@
 base-devel
 bash-completion 
 brave-bin 
-btop   
+btop
+dmenu   
 fastfetch 
 git  
 htop   
