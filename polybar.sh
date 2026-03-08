@@ -4,12 +4,9 @@ set -euo pipefail
 echo
 tput setaf 3
 echo "######################################################"
-echo "################### Install Software"
+echo "################### Install Polybar"
 echo "######################################################"
 tput sgr0
 echo
-# Install Software
-for i in package.txt
-do
-    sudo pacman -S --noconfirm --needed $i
-done
+# Install Polybar
+sudo pacman -S --noconfirm --needed polybar

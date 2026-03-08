@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
 echo
 tput setaf 3
@@ -10,9 +10,9 @@ tput sgr0
 echo
 # Install LightDM
 
-sudo pacman -S lightdm --noconfirm --needed 
-sudo pacman -S lightdm-gtk-greeter --noconfirm --needed
-sudo pacman -S lightdm-gtk-greeter-settings --noconfirm --needed
+sudo pacman -S --noconfirm --needed lightdm 
+sudo pacman -S --noconfirm --needed lightdm-gtk-greeter 
+sudo pacman -S --noconfirm --needed lightdm-gtk-greeter-settings 
 
 echo
 tput setaf 3

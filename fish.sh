@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
 echo
 tput setaf 3
@@ -9,5 +9,5 @@ echo "######################################################"
 tput sgr0
 echo
 # Install and Change Shell to Fish
-sudo pacman -S fish --noconfirm --needed
+sudo pacman -S --noconfirm --needed fish
 chsh -s /usr/bin/fish $USER

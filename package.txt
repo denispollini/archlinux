@@ -14,7 +14,8 @@ keepassxc
 libreoffice-still 
 nextcloud-client 
 onlyoffice-bin 
-openvpn 
+openvpn
+polybar 
 rustdesk-bin 
 spotify 
 sublime-text-4 

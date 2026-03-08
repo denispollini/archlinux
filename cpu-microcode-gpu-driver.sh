@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
 echo
 tput setaf 3
@@ -27,10 +27,10 @@ install_cpu_ucode() {
   CPU_VENDOR=$(lscpu | grep "Vendor ID:" | awk '{print $3}')
   if [[ $CPU_VENDOR == "GenuineIntel" ]]; then
     echo "Intel CPU detected. Installing intel-ucode."
-    pacman -S intel-ucode --noconfirm --needed
+    pacman -S --noconfirm --needed intel-ucode 
   elif [[ $CPU_VENDOR == "AuthenticAMD" ]]; then
     echo "AMD CPU detected. Installing amd-ucode."
-    pacman -S amd-ucode --noconfirm --needed
+    pacman -S --noconfirm --needed amd-ucode 
   else
     echo "Unrecognized CPU. No ucode package installed."
   fi
@@ -43,10 +43,10 @@ install_gpu_drivers() {
   
   if [[ $GPU_VENDOR == "AMD" ]]; then
     echo "AMD GPU detected. Installing xf86-video-amdgpu."
-    pacman -S xf86-video-amdgpu --noconfirm --needed
+    pacman -S --noconfirm --needed xf86-video-amdgpu 
   elif [[ $GPU_VENDOR == "NVIDIA" ]]; then
     echo "Nvidia GPU detected. Installing Nvidia drivers."
-    pacman -S nvidia nvidia-utils nvidia-settings --noconfirm --needed
+    pacman -S --noconfirm --needed nvidia nvidia-utils nvidia-settings 
   else
     echo "No supported GPU detected or Intel GPU (no action needed)."
   fi

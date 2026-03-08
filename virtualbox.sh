@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
 echo
 tput setaf 3
@@ -10,9 +10,9 @@ tput sgr0
 echo
 # VirtualBOX
 
-sudo pacman -S virtualbox --noconfirm --needed
-sudo pacman -S virtualbox-host-dkms --noconfirm --needed
-sudo pacman -S virtualbox-guest-utils --noconfirm --needed
+sudo pacman -S --noconfirm --needed virtualbox 
+sudo pacman -S --noconfirm --needed virtualbox-host-dkms 
+sudo pacman -S --noconfirm --needed virtualbox-guest-utils 
 
 echo
 tput setaf 3
