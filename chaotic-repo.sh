@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e pipefail
+set -e
 
 echo
 tput setaf 3
