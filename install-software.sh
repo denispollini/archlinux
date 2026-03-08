@@ -9,7 +9,6 @@ echo "######################################################"
 tput sgr0
 echo
 # Install Software
-for i in package.txt
-do
-    sudo pacman -S --noconfirm --needed $i
-done
+while IFS= read -r i; do
+    sudo pacman -S --noconfirm --needed "$i"
+done < package.txt

@@ -13,9 +13,7 @@ err()  { echo -e "${RED}[✗]${NC} $*"; exit 1; }
 
 # --- Check root permissions ---
 if [[ "$EUID" -ne 0 ]]; then
-  warn "This script requires root privileges. Re-running with sudo..."
-  sudo "$0" "$@"
-  exit $?
+  err "This script must be run as root (use: sudo $0)"
 fi
 
 # --- 1. Download strap.sh ---
