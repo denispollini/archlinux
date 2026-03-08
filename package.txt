@@ -1,4 +1,3 @@
-base-devel 
 bash-completion 
 brave-bin 
 btop   
