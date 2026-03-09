@@ -22,5 +22,4 @@ tput sgr0
 echo
 # Enable Services
 sudo systemctl enable --now vmtoolsd.service
-sudo systemctl enable --now vmware-user-suid-wrapper
 sudo systemctl enable --now vmware-vmblock-fuse.service
