@@ -11,3 +11,4 @@ openvpn
 sublime-text-4
 terminator
 vim
+xclip
