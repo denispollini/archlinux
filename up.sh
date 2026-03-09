@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -e
 
 # checking if I have the latest files from github
 echo "Checking for newer files online first"

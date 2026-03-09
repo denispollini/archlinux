@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
-
+set -e
 echo
 tput setaf 3
 echo "######################################################"
