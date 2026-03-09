@@ -19,6 +19,7 @@ echo "######################################################"
 tput sgr0
 echo
 # Copy Default Polybar Configuration
+mkdir -p $HOME/.config/polybar
 cp /etc/polybar/config.ini $HOME/.config/polybar/config.ini
 
 echo
