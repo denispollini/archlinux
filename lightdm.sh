@@ -22,4 +22,4 @@ echo "######################################################"
 tput sgr0
 echo
 # Enable Services
-sudo systemctl enable --now lightdm.service
+sudo systemctl enable lightdm.service
