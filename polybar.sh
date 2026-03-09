@@ -44,7 +44,7 @@ echo
 # Create Configuration File and Launch Script
 mkdir -p $HOME/.config/polybar
 
-cat <<EOF > $HOME/.config/polybar/config.ini
+cat <<'EOF' > $HOME/.config/polybar/config.ini
 ;==========================================================
 ;
 ;
@@ -229,7 +229,7 @@ screenchange-reload = true
 pseudo-transparency = true
 EOF
 
-cat <<EOF > $HOME/.config/polybar/launch.sh
+cat <<'EOF' > $HOME/.config/polybar/launch.sh
 #!/usr/bin/env bash
 
 # Terminate already running bar instances
