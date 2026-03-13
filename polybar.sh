@@ -247,3 +247,11 @@ echo "Bars launched..."
 EOF
 
 chmod +x $HOME/.config/polybar/launch.sh
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

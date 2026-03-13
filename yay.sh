@@ -32,3 +32,11 @@ tput sgr0
 echo
 # Install yay
 makepkg -si
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

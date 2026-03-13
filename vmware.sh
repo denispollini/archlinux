@@ -23,3 +23,11 @@ echo
 # Enable Services
 sudo systemctl enable --now vmtoolsd.service
 sudo systemctl enable --now vmware-vmblock-fuse.service
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

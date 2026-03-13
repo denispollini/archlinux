@@ -15,3 +15,11 @@ sudo pacman -U --noconfirm --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/c
 sudo pacman -U --noconfirm --needed 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' 
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 yes | sudo pacman -Syu --noconfirm
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

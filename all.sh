@@ -24,3 +24,11 @@ sh fish.sh
 sh install-software.sh
 sh lightdm.sh
 sh yay.sh
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

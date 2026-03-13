@@ -63,3 +63,11 @@ else
   install_cpu_ucode
   install_gpu_drivers
 fi
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

@@ -23,3 +23,11 @@ tput sgr0
 echo
 # Enable Services
 sudo systemctl enable lightdm.service
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

@@ -14,3 +14,11 @@ sudo pacman -S --noconfirm --needed i3-wm
 if [[ $(systemd-detect-virt) == "vmware" ]]; then
 echo -e "exec --no-startup-id /usr/bin/vmware-user" >> $HOME/.config/i3/config
 fi
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo

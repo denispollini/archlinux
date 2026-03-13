@@ -143,4 +143,12 @@ echo "######################################################"
 tput sgr0
 echo
 #Backup Fish Config
-cp -r /$HOME/Nextcloud/backup-config/.config/fish /$HOME/.config/ 
+cp -r /$HOME/Nextcloud/backup-config/.config/fish /$HOME/.config/
+
+echo
+tput setaf 3
+echo "######################################################"
+echo "################### Script completed"
+echo "######################################################"
+tput sgr0
+echo
